@@ -1,0 +1,32 @@
+﻿@page
+@model IntroModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<h3>Prateek Kumar</h3>
+
+<div>
+    <form method="get">
+        <fieldset>
+            <legend>Multiply two numbers</legend>
+            <div>
+                <label for="Operand1">Operand1:</label>
+                <input type="text" name="Operand1" value="@Model.Operand1" />
+            </div>
+            <div>
+                <label for="Operand2">Operand2:</label>
+                <input type="text" name="Operand2" value="@Model.Operand2" />
+            </div>
+
+            <input id="Submit1" type="submit" value="submit" />
+        </fieldset>
+    </form>
+
+   <output>@Model.Result</output>
+    @section  FirstSection{
+        <h3>This is Intro Section.</h3>
+    }
+
+</div>
