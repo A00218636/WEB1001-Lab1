@@ -13,13 +13,12 @@ namespace WebLAB1.Pages
         public double Operand1 { get; set; }
         [FromQuery(Name = "Operand2")]
        public double Operand2 { get; set; }
-        //[FromQuery(Name = "Result")]
+      
         public  double Result { get; set; }
         public void OnGet()
         {
             Result = Operand1 * Operand2;
 
-           // return Result;
         }
 
 
